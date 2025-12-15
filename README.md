@@ -78,56 +78,50 @@ python main.py
 
 ### 🔹 A* Search
 
-* Mohamed Refat Mustafa
-* Abd-Elmajid Nasser
-  **ID:** 2023176
+* Mohamed Refat Mustafa Abd-Elmajid Nasser
+* **ID:** 2023176
 
 ---
 
 ### 🔹 Iterative Deepening Search (IDS)
 
-* Mohamed Khaled El-Daheesh
-  **ID:** 2023174
+* Mohamed Khaled El-Daheesh Ahmed
+* **ID:** 2023174
 
 ---
 
 ### 🔹 Breadth First Search (BFS)
 
-* Mohamed Elsayed Mohamed
-* Ahmed Aboelsoud
-  **ID:** 2023168
+* Mohamed Elsayed Mohamed Ahmed Aboelsoud
+* **ID:** 2023168
 
 ---
 
 ### 🔹 Project Management
 
-* Maram Hazem Fouad
-* Ismail Ahmed
-  **ID:** 2023202
+* Maram Hazem Fouad Ismail Ahmed
+*  **ID:** 2023202
 
 ---
 
 ### 🔹 Hill Climbing Search
 
-* Menna Ahmed
-* Ibrahim Agamy
-  **ID:** 2023222
+* Menna Ahmed Ibrahim Agamy
+*  **ID:** 2023222
 
 ---
 
 ### 🔹 Uniform Cost Search (UCS)
 
-* Heba Ahmed Ibrahim
-* Agamy
-  **ID:** 2023244
+* Heba Ahmed Ibrahim Agamy
+*  **ID:** 2023244
 
 ---
 
 ### 🔹 Depth First Search (DFS)
 
-* Wessam Mohamed El-Sayed
-* Al-Hanafy
-  **ID:** 2023249
+* Wessam Mohamed El-Sayed Al-Hanafy
+* **ID:** 2023249
 
 ---
 
