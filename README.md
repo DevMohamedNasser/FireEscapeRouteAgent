@@ -60,17 +60,32 @@ The algorithm that reaches the exit **faster and more efficiently** is selected 
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/DevMohamedNasser/SafeExit-AI.git
-cd SafeExit-AI
+git clone https://github.com/DevMohamedNasser/FireEscapeRouteRobot
+cd ./Project
 ```
 
-### 2️⃣ Run the program
+### 2️⃣ Install required libraries
 
-```bash
-python main.py
-```
-
+pip3 install numpy matplotlib PyOpenGL PyOpenGL_accelerate
 > Make sure Python 3 is installed on your system.
+
+### 3️⃣ Run the program
+
+python3 main.py <algorithm>
+
+Replace <algorithm> with one of the following options:
+| Algorithm Name             | Example Command             |
+| -------------------------- | --------------------------- |
+| Breadth First Search       | `python3 main.py bfs`       |
+| Depth First Search         | `python3 main.py dfs`       |
+| Iterative Deepening Search | `python3 main.py ids`       |
+| Uniform Cost Search        | `python3 main.py ucs`       |
+| A* Search                  | `python3 main.py astar`     |
+| Hill Climbing              | `python3 main.py hillclimb` |
+
+> ⚠ Note: Depending on your system configuration, you might need to run the commands with `python` or `python3`.  
+> Example: `python main.py bfs` or `python3 main.py bfs`
+
 
 ---
 
