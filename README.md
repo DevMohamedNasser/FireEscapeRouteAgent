@@ -16,41 +16,71 @@ Different search strategies are applied and visualized to analyze which algorith
 * Implement and compare classical **AI search algorithms**
 * Simulate a realistic **fire evacuation scenario**
 * Identify the **most efficient algorithm** for guiding people safely to exits
-* Evaluate algorithms based on:
-
-  * Path length
-  * Number of discovered nodes
-  * Total movements
-  * Visualization time
+* Evaluate algorithms based on efficiency and optimality
 
 ---
 
 ## 🤖 Scenario Description
 
 * The environment is represented as a **3D grid-based maze**
-* The maze simulates a **mall under emergency conditions**
-* Walls represent blocked paths, shops, or unsafe areas
-* The agent starts from a predefined location
+* The maze simulates a **mall under emergency fire conditions**
+* Walls represent blocked or unsafe areas
+* The agent starts from a predefined position
 * The goal is a **safe exit gate**
-* Each experiment runs **one algorithm at a time**
+* Only **one algorithm runs per experiment**
 * The simulation visualizes:
 
   * Exploration phase
   * Final escape path
-* This setup allows observing how different algorithms behave under **hard and constrained conditions**
+* This setup allows observing algorithm behavior under **hard and constrained conditions**
 
 ---
 
 ## 🧠 Implemented Search Algorithms
 
-| Algorithm                            | Description                                                                                                                          |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **Breadth First Search (BFS)**       | Tries to reach the goal by exploring all neighboring nodes level by level, guaranteeing the shortest path in unweighted environments |
-| **Depth First Search (DFS)**         | Explores one path deeply before backtracking                                                                                         |
-| **Iterative Deepening Search (IDS)** | Combines DFS depth limits with BFS completeness                                                                                      |
-| **Uniform Cost Search (UCS)**        | Expands the node with the lowest cumulative cost                                                                                     |
-| **A* Search**                        | Uses both path cost and a heuristic function to efficiently reach the goal                                                           |
-| **Hill Climbing**                    | A greedy approach that selects the neighbor closest to the goal                                                                      |
+| Algorithm                            | Description                                                               |
+| ------------------------------------ | ------------------------------------------------------------------------- |
+| **Breadth First Search (BFS)**       | Tries to reach the goal by exploring all neighboring nodes level by level |
+| **Depth First Search (DFS)**         | Explores one path deeply before backtracking                              |
+| **Iterative Deepening Search (IDS)** | Combines DFS depth limits with BFS completeness                           |
+| **Uniform Cost Search (UCS)**        | Expands the node with the lowest cumulative cost                          |
+| **A* Search**                        | Uses path cost and heuristic function to efficiently reach the goal       |
+| **Hill Climbing**                    | Greedy approach that selects the closest neighbor to the goal             |
+
+---
+
+## 📊 Algorithms Comparison & Evaluation
+
+```
+--------------------------------------------------------------------------------------------------------------
+|      Metric      |     BFS      |     DFS      |     UCS      |      A*      |     IDS      |     Hill     |
+--------------------------------------------------------------------------------------------------------------
+| Discovered nodes |        333   |        241   |        326   |        322   |        324   |         56   |
+| Moves            |       6582   |        328   |       8814   |       9014   |      18103   |         56   |
+| Final path       |         50   |        116   |         50   |         50   |         74   |          0   |
+| Viz Time (s)     |     994.80   |      66.60   |    1329.60   |    1359.60   |    2726.55   |       8.40   |
+--------------------------------------------------------------------------------------------------------------
+```
+
+### 🔍 Evaluation Metrics
+
+* **Discovered nodes:** Number of explored states
+* **Moves:** Total agent movements
+* **Final path:** Length of the path to the exit
+* **Visualization time:** Time taken to visualize the process
+
+---
+
+## 🏆 Algorithm Ranking (Best → Worst)
+
+Based on **path optimality, exploration efficiency, and suitability for emergency evacuation**, the algorithms are ranked as follows:
+
+1. **A*** – Optimal path with heuristic guidance
+2. **Uniform Cost Search (UCS)** – Optimal but slower than A*
+3. **Breadth First Search (BFS)** – Optimal path with high exploration cost
+4. **Iterative Deepening Search (IDS)** – Complete but inefficient in large environments
+5. **Depth First Search (DFS)** – Fast but non-optimal
+6. **Hill Climbing** – Fastest but unreliable and incomplete
 
 ---
 
@@ -58,7 +88,7 @@ Different search strategies are applied and visualized to analyze which algorith
 
 * **Python 3**
 * **PyOpenGL** (OpenGL, GLU, GLUT)
-* 3D Maze visualization
+* 3D Maze Visualization
 * Standard Python libraries
 
 ---
@@ -68,9 +98,9 @@ Different search strategies are applied and visualized to analyze which algorith
 ```
 Project_code/
 │
-├── main.py          # Main entry point & OpenGL visualization
-├── maze.py          # 3D maze, agent, and environment logic
-├── search_algo.py   # AI search algorithms implementations
+├── main.py
+├── maze.py
+├── search_algo.py
 │
 └── Team Contributions/
     └── team_members.txt
@@ -93,35 +123,15 @@ cd Project_code
 pip install PyOpenGL PyOpenGL_accelerate
 ```
 
-> Make sure **Python 3** is installed.
-
 ### 3️⃣ Run the program
 
 ```bash
 python main.py
 ```
 
-You will be prompted to choose an algorithm:
+Then choose one of the following options **inside the program**:
 
-| Command   | Algorithm                                 |
-| --------- | ----------------------------------------- |
-| `bfs`     | Breadth First Search                      |
-| `dfs`     | Depth First Search                        |
-| `ucs`     | Uniform Cost Search                       |
-| `astar`   | A* Search                                 |
-| `ids`     | Iterative Deepening Search                |
-| `hill`    | Hill Climbing                             |
-| `compare` | Compare all algorithms (no visualization) |
-
----
-
-## 📊 Evaluation Criteria
-
-* Path length
-* Number of discovered nodes
-* Total movements
-* Visualization time
-* Algorithm efficiency in emergency conditions
+`bfs` | `dfs` | `ucs` | `astar` | `ids` | `hill` | `compare`
 
 ---
 
