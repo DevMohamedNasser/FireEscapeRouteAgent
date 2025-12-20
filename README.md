@@ -135,8 +135,6 @@ Then choose one of the following options **inside the program**:
 
 ## 👥 Team Members
 
-*(Sorted alphabetically)*
-
 * Heba Ahmed Ibrahim Agamy
 * Maram Hazem Fouad Ismail Ahmed
 * Menna Ahmed Ibrahim Agamy
