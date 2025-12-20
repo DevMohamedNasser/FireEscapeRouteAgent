@@ -2,13 +2,11 @@
 
 ## 📌 Project Overview
 
-This project is a university **Artificial Intelligence** course project that simulates a **fire emergency scenario inside a mall**.
-
-The system represents a **3D maze environment** where an intelligent agent acts as a **fire escape guide**.
-In case of fire, this agent helps people navigate from dangerous areas to a **safe exit gate** using classical AI search algorithms.
-
-Different search strategies are applied and visualized to analyze which algorithm provides the **most efficient escape route**, considering optimal paths and minimal visualization time under difficult conditions.
-
+“Fire Escape Route Agent” is a pathfinding problem, which studies and aims to the find the fastest and most safe path to take in a mall
+in case of a fire. The environment of the study is a 3D maze of size 25x30 and the actor is an agent that routes the maze through
+different AI algorithms in order to find the fastest and most safe path to the goal and select the AI algorithm that led it to this path
+in the shortest time as the best algorithm. Depending on the results of the study, a Surviving Trolley that transports people will take the
+optimal path towards the exit of the mall safely.
 ---
 
 ## 🎯 Project Objective
