@@ -18,7 +18,6 @@
 ## 🤖 Scenario Description
 
 * The environment is represented as a **3D grid-based maze**
-* The maze simulates **The environment of the study**
 * Walls represent blocked areas
 * The agent starts from a predefined position
 * The goal is a **safe exit gate**
