@@ -18,13 +18,12 @@
 ## 🤖 Scenario Description
 
 * The environment is represented as a **3D grid-based maze**
-* The maze simulates a **mall under emergency fire conditions**
-* Walls represent blocked or unsafe areas
+* The maze simulates **The environment of the study**
+* Walls represent blocked
 * The agent starts from a predefined position
 * The goal is a **safe exit gate**
 * Only **one algorithm runs per experiment**
 * The simulation visualizes:
-
   * Exploration phase
   * Final escape path
 * This setup allows observing algorithm behavior under **hard and constrained conditions**
